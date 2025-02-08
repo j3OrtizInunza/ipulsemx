@@ -1,0 +1,246 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilos generales */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+}
+
+/* Estilos del header */
+header {
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: center; /* Centrar elementos */
+  align-items: center;
+  padding: 15px 20px;
+  position: relative;
+}
+
+/* Logo centrado con tipografía elegante */
+.logo {
+  font-size: 2.5rem; /* MÁS GRANDE */
+  font-family: 'Playfair Display', serif; /* ELEGANTE */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.logo img {
+  width: 80px; /* Ajustar tamaño del logo */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Menú de navegación */
+nav {
+  position: absolute;
+  right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sección de bienvenida */
+#bienvenida {
+  padding: 40px 20px;
+  background-color: white;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif; /* Elegante */
+}
+
+/* Frase llamativa con nueva tipografía */
+#bienvenida p {
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #ff6600;
+}
+
+.cta-btn {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.cta-btn:hover {
+  background-color: #e65c00;
+}
+
+/* Sección de productos */
+#productos {
+  padding: 30px 20px;
+  background-color: #fff;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Grid de productos en 2 COLUMNAS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* SOLO 2 COLUMNAS */
+  gap: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Tarjetas de productos */
+.producto {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.producto:hover {
+  transform: scale(1.03);
+}
+
+/* Imágenes de productos (TAMAÑO MÁS PEQUEÑO) */
+.product-img {
+  width: 130px;
+  height: auto;
+  display: block;
+  margin: 0 auto 8px;
+  border-radius: 8px;
+}
+
+/* Sección de contacto */
+#contacto {
+  padding: 30px 20px;
+  background-color: #f8f8f8;
+}
+
+.animated-link {
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.animated-link:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  margin-top: 15px;
+}
+
+#productos {
+  background: linear-gradient(180deg, #3d3737 5%, #f8f8f8 100%);
+}
+
+#productos {
+  background-color: #d22828;
+  padding: 30px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  border-radius: 10px; /* Bordes redondeados */
+}
+#productos {
+  background: url('images/textura.png'); /* Agregar imagen de textura */
+  background-size: cover;
+}
+.producto {
+  opacity: 0; /* Inicialmente invisibles */
+  transform: translateY(20px); /* Ligeramente abajo */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.producto.visible {
+  opacity: 1; /* Se hacen visibles */
+  transform: translateY(0); /* Vuelven a su posición normal */
+}
+.producto {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+  transform: scale(1.05); /* Efecto de crecimiento al pasar el mouse */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+.cta-btn {
+  background: linear-gradient(135deg, #ff6600, #ff3300);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+h1 {
+  animation: fadeInUp 1s ease-out;
+}
+.producto {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.producto.visible {
+  opacity: 1;
+  transform: translateY(5);
+}
